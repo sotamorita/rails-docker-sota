@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  ruby: circleci/ruby@1.1.2
+        ruby: circleci/ruby@1.1.2
   heroku: circleci/heroku@1.2.3
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     working_directory: ~/rails-docker-sota/src
     steps:
       - checkout:
-          path: ~/rails-docker-kyt
+          path: ~/rails-docker-sota
       - ruby/install-deps
 
   test:
